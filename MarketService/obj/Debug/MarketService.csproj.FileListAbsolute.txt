@@ -1,0 +1,15 @@
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\MarketService.dll.config
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\MarketService.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\MarketService.pdb
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\Data.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\EntityFramework.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\Data.pdb
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\Data.dll.config
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\EntityFramework.xml
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\obj\Debug\MarketService.csprojAssemblyReference.cache
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\obj\Debug\MarketService.csproj.CoreCompileInputs.cache
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\obj\Debug\MarketService.csproj.CopyComplete
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\obj\Debug\MarketService.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\MarketService\obj\Debug\MarketService.pdb

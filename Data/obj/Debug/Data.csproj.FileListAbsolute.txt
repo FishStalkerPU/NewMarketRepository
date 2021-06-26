@@ -1,0 +1,12 @@
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\Data.dll.config
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\Data.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\Data.pdb
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\EntityFramework.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\EntityFramework.xml
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\obj\Debug\Data.dll
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Data\obj\Debug\Data.pdb

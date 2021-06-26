@@ -1,0 +1,2 @@
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\ВасилГеоргиев00\source\repos\NewMarket\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache

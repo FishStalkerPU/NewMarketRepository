@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MarketService.DTOs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MarketService.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfTradeItemDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TradeItemDTO" nillable="true" type="tns:TradeItemDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTradeItemDTO" nillable="true" type="tns:ArrayOfTradeItemDTO" />
+  <xs:complexType name="TradeItemDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FreeDelivery" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PricePerItem" type="xs:float" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="Rating" type="xs:float" />
+      <xs:element minOccurs="0" name="Seller" nillable="true" type="tns:SellerDTO" />
+      <xs:element minOccurs="0" name="SellerID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TradeItemDTO" nillable="true" type="tns:TradeItemDTO" />
+  <xs:complexType name="SellerDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PremiumAccount" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Profit" type="xs:float" />
+      <xs:element minOccurs="0" name="TotalQuantitySold" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SellerDTO" nillable="true" type="tns:SellerDTO" />
+  <xs:complexType name="ArrayOfCustomerDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerDTO" nillable="true" type="tns:CustomerDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerDTO" nillable="true" type="tns:ArrayOfCustomerDTO" />
+  <xs:complexType name="CustomerDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MostPurchasedProduct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrefferedPaymentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PremiumAccount" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ProductsRated" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalSpent" type="xs:float" />
+      <xs:element minOccurs="0" name="TradeItem" nillable="true" type="tns:TradeItemDTO" />
+      <xs:element minOccurs="0" name="TradeItemID" type="xs:int" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerDTO" nillable="true" type="tns:CustomerDTO" />
+  <xs:complexType name="ArrayOfSellerDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SellerDTO" nillable="true" type="tns:SellerDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSellerDTO" nillable="true" type="tns:ArrayOfSellerDTO" />
+</xs:schema>

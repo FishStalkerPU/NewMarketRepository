@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MarketSoap" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MarketService.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTradeItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradeItems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTradeItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradeItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostTradeItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostTradeItem" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostTradeItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostTradeItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTradeItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTradeItem" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTradeItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTradeItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutTradeItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutTradeItems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutTradeItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutTradeItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTradeItemByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradeItemByID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTradeItemByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTradeItemByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCustomerByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCustomerByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSellers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSellers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSellers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSellersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostSeller_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostSeller" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostSeller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostSellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteSeller_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSeller" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteSeller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutSellers_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutSellers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutSellers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutSellersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSellerByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSellerByID" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSellerByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSellerByIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTradeItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTradeItems" message="tns:IService1_GetTradeItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTradeItemsResponse" message="tns:IService1_GetTradeItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTradeItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostTradeItem" message="tns:IService1_PostTradeItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostTradeItemResponse" message="tns:IService1_PostTradeItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTradeItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteTradeItem" message="tns:IService1_DeleteTradeItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteTradeItemResponse" message="tns:IService1_DeleteTradeItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutTradeItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutTradeItems" message="tns:IService1_PutTradeItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutTradeItemsResponse" message="tns:IService1_PutTradeItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTradeItemByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTradeItemByID" message="tns:IService1_GetTradeItemByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTradeItemByIDResponse" message="tns:IService1_GetTradeItemByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCustomers" message="tns:IService1_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCustomersResponse" message="tns:IService1_GetCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostCustomer" message="tns:IService1_PostCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostCustomerResponse" message="tns:IService1_PostCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteCustomer" message="tns:IService1_DeleteCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteCustomerResponse" message="tns:IService1_DeleteCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutCustomers" message="tns:IService1_PutCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutCustomersResponse" message="tns:IService1_PutCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCustomerByID" message="tns:IService1_GetCustomerByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCustomerByIDResponse" message="tns:IService1_GetCustomerByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSellers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSellers" message="tns:IService1_GetSellers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSellersResponse" message="tns:IService1_GetSellers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostSeller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostSeller" message="tns:IService1_PostSeller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostSellerResponse" message="tns:IService1_PostSeller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSeller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteSeller" message="tns:IService1_DeleteSeller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteSellerResponse" message="tns:IService1_DeleteSeller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutSellers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutSellers" message="tns:IService1_PutSellers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutSellersResponse" message="tns:IService1_PutSellers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSellerByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSellerByID" message="tns:IService1_GetSellerByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSellerByIDResponse" message="tns:IService1_GetSellerByID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTradeItems">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTradeItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostTradeItem">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostTradeItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTradeItem">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteTradeItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTradeItems">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutTradeItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTradeItemByID">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTradeItemByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostCustomer">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutCustomers">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByID">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCustomerByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSellers">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSellers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostSeller">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostSeller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSeller">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteSeller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutSellers">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutSellers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSellerByID">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSellerByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/MarketSoap/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
